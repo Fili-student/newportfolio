@@ -1,0 +1,129 @@
+
+
+main{
+    height: 100vh;
+    background: rgb(237,59,50);
+    background: linear-gradient(0deg, rgba(237,59,50,1) 0%, rgba(34,34,56,1) 83%); 
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 600;
+  
+  }
+  
+  .grid-container-main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(8,1fr) ;
+    grid-template-rows: repeat(5,1fr);
+  
+  }
+
+.linie-main{
+    width: 20px;
+  margin-left: 50px;
+  grid-row: 1/6;
+  grid-column: 1/2;
+  /* background: rgb(34,34,56); */
+  /* background: linear-gradient(0deg, rgba(34,34,56,1) 0%, rgba(63,38,55,1) 13%, rgba(237,59,50,1) 100%);  */
+  background-color: #ed3b32;
+}
+
+  .links-main{
+    /* width: 30px; */
+    /* height: 30px; */
+    background-color: #68a6d8;
+    grid-column: 2;
+    grid-row:3/6 ;
+    border-radius: 20px;
+    border: solid 5px #071e8659; 
+    padding: 20px;
+  overflow: scroll;
+  /* scrollbar-color: #ed3b32 #ec706a; 
+   */
+  scrollbar-color: #ed3b3200 #ec706a00; 
+
+margin-bottom: 40px;
+border-bottom-left-radius: 80px;
+border-top-right-radius: 80px;
+box-sizing: border-box; 
+  }
+
+  
+
+
+  
+.rechts-main{
+    /* width: 30px; */
+    /* height: 30px; */
+    background-color: #68a6d8;
+    grid-column: 5/8;
+    /* margin-right: 40px; */
+    grid-row:2/6 ;
+    border-radius: 20px;
+    border: solid 5px #071e8659; 
+    z-index: 1;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding: 20px;
+  /* overflow: hidden; */
+  overflow:scroll;
+  font-size: 23.04px;
+  scrollbar-color: #ed3b3200 #ec706a00; 
+  border-bottom-right-radius:80px ;
+  border-top-left-radius: 80px;
+}  
+
+
+
+.imgmaindiv{
+    background-image: url("https://images.pexels.com/photos/3651579/pexels-photo-3651579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 400px;
+    height: 400px;
+    grid-column: 4/7;
+    grid-row: 3/5;
+    z-index: 0;
+    border-radius: 50%;
+    margin-left: 50px;
+    /* overflow: hidden; */
+}
+
+.img-profile{
+    /* background-color: #68a6d8;
+    */
+    
+    background-image: url("https://images.pexels.com/photos/7004739/pexels-photo-7004739.jpeg?auto=compress&cs=tinysrgb&w=600");
+    /* background mit linear gradient? */
+    border: solid 5px #071e8659; 
+    border-radius: 20px;
+    grid-row: 4/6;
+    grid-column: 3/5;
+    z-index: 1;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 90px;
+margin-bottom: 40px;
+
+}
+
+.hobbies{
+    color: #1329a1;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.hobbies > i{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+h2{
+    /* text-decoration: underline; */
+    color: #222238;
+    /* font-family: 'Abhaya Libre', serif; */
+  font-family: 'Chango', display;
+    font-weight: 600;
+    text-align:end;
+    font-size: 23.04px;
+  padding-right: 5px;  
+  }
+
