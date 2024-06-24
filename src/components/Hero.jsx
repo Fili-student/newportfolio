@@ -13,7 +13,7 @@ function Hero(){
             {/* </div> */}
                  {/* icons */}
                  <h1>Portfolio</h1>
-                 <button className="button-header-arrow"><a href="">Find out more</a></button>
+                 <button className="button-header-arrow"><a href="#mainsnap">Find out more</a></button>
                  <i class="fa-solid fa-lightbulb"></i>
         </div>
     </header>

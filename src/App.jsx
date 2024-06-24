@@ -4,6 +4,7 @@ import "./style/main.style.css"
 import Hero from './components/Hero.jsx'
 import Mainsection from './components/Mainsection.jsx'
 import Footer from './components/Footer.jsx'
+import "./style/footer.css";
 import Skill from "./components/Skill.jsx"
 
 

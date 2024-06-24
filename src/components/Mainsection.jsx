@@ -1,8 +1,23 @@
 function Mainsection(){
     return(
     <>
-    <main>
+    <main id="mainsnap">
         <div className="grid-container-main">
+            <div className="linie-oben1"></div>
+            <div className="linie-oben2"></div>
+            <div className="linie-oben3"></div>
+            <div className="linie-oben4"></div>
+            <div className="linie-oben5"></div>
+            <div className="linie-oben6"></div>
+            <div className="linie-oben7"></div>
+            <div className="linie-oben8"></div>
+
+
+
+
+
+
+
             <div className="imgmaindiv"></div>
             <div className="linie-main"></div>
             <div className="links-main">

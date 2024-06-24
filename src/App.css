@@ -6,11 +6,13 @@ body{
 }
 *{
   scrollbar-color: #68a6d8 #1329a1;
+  scroll-snap-type: x mandatory;
 }
 
 header{
   height: 100vh;
   background-color: #222238;
+  scroll-snap-align: center;
 }
 
 .grid-container-header{
