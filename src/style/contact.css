@@ -1,0 +1,157 @@
+ @media screen and (min-width:1194px){
+    *{
+        scroll-snap-type: y mandatory; 
+      }
+
+      .contact-section{
+        scroll-snap-align: center;
+        height: 100vh;
+        background-color: #222238;
+      }
+
+      .contact-container{
+        height: 100vh;
+        display: grid;
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns:repeat(12,1fr) ;
+      }
+
+      .linke-linie-contact{
+        background-color: #ed3b32;
+        width: 20px;
+        margin-left: 50px;
+        grid-row: 1/11;
+        grid-column: 1/2;
+      }
+
+      .linie-1{
+        width: 20px;
+        grid-row: 2/10;
+        grid-column: 3;
+        background-color: #ed3b32;
+      }
+      .linie-2{
+        height: 20px;
+        background: #68a6d8;
+        grid-row: 7;
+        grid-column:1/5 ;
+      }
+      .linie-3{
+        height: 20px;
+        grid-row: 9;
+        grid-column: 2/8;
+        background: #68a6d8;
+        z-index:1;
+        position: relative;
+      }
+
+      .contact-formular{
+        background-color: #ed3b32;
+        grid-column: 6/11;
+        grid-row: 2/8;
+        border-top-left-radius: 290px;
+      }
+
+      .h3contact{
+        color:white;
+        text-align: end;
+        padding-right: 40px;
+      }
+
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+input{
+    width: 500px;
+padding: 10px;
+font-size:19.2px ;
+font-family: 'Abhaya Libre', serif;
+}
+input:focus{
+background-color: #222238;
+color: white;
+}
+textarea{
+    width: 500px;
+    height: 170px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size:19.2px ;
+    font-family: 'Abhaya Libre', serif;
+}
+textarea:focus{
+  background-color: #222238;
+color: white;
+}
+
+.yourname{
+  display: flex;
+  flex-direction: column;
+}
+
+.youremail{
+display: flex;
+flex-direction: column;
+} 
+label{
+  color: white;
+  font-size:19.2px ;
+}
+
+.button-contact{
+  width: 200px;
+  height: 30px;
+background-color:#222238;
+border-top-left-radius: 30px;
+border: #222238 solid 2px;
+color: white;
+font-family: 'Abhaya Libre', serif;
+font-size:19.2px ;
+margin-top: 10px;
+}
+.button-contact:hover{
+  background-color: #222238c1;
+  cursor: pointer;
+}
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /* 
+     @media screen and (min-width: 681px) and (max-width:1193px){ */
+
+
+
+
+
+
+
+        /* @media screen and (min-width:0px) and (max-width:680px){ */

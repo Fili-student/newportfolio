@@ -5,7 +5,7 @@ function Footer(){
         <footer>
         <div className="footer-grid-container">
 
-        <a href="" className="backtop"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#totop" className="backtop"><i class="fa-solid fa-arrow-up"></i></a>
         
         <section className="credits">
         <p>Photo Credits:</p>

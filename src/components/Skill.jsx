@@ -1,21 +1,6 @@
- 
 
 function Skill(){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     return(<>
     <section className="sec-skill">
         <div className="skill-container">
@@ -47,7 +32,7 @@ function Skill(){
 
         <i class="fa-brands skill-brand fa-react brand4"></i>
         <div className="react-con">
-        <div className="react-bar"></div>
+        <div className="react-bar" ></div>
 
             </div>
         </div>
