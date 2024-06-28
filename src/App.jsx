@@ -9,8 +9,13 @@ import "./style/footer.css";
 import Skill from "./components/Skill.jsx"
 import Contact from './components/Contact.jsx'
 
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

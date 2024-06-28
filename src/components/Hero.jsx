@@ -1,4 +1,5 @@
 function Hero(){
+
     return(<>
     <header id="totop">
        
@@ -13,7 +14,7 @@ function Hero(){
             {/* </div> */}
                  {/* icons */}
                  <h1 className="ueberschrift">Portfolio</h1>
-                 <button className="button-header-arrow"><a href="#mainsnap">Find out more</a></button>
+                 <button className="button-header-arrow"><a href="#about">Find out more</a></button>
                  <i class="fa-solid fa-lightbulb"></i>
         </div>
     </header>
@@ -23,9 +24,6 @@ export default Hero
 
 // was soll drin sein:
 
-// -h1 = portfolio 
-// -ein div dadrunter mit pfeil link button 
-// -3 icons für socials :email ,insta , github
+
 // -ein button für dark und light theme :) // glühbirne : <i class="fa-solid fa-lightbulb"></i>
-// die zwei striche links und oben
 

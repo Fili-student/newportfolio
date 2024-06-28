@@ -1,7 +1,7 @@
 function Mainsection(){
     return(
     <>
-    <main id="mainsnap">
+    <main id="about">
         <div className="grid-container-main">
             <div className="linie-oben1"></div>
             <div className="linie-oben2"></div>
@@ -39,7 +39,7 @@ function Mainsection(){
 
                     <h2>About me</h2>
                 {/* <p>Fili</p> */}
-                <p>Hi my name is Fili, I just turned 28 and last Year my coding Journey began.</p>
+                <p>Hi my name is Fili, f just turned 28 and last Year my coding Journey began.</p>
                 <p>It's astonishing what a few ads here and there can do for you. "Learn Coding in 3 months" screamed at me from my screen. So naturally i started researching, meanwhile FreeCodeCamp came along and showed me what it would be like to code.</p> 
                 {/* <p>Then another ad from DCI appeared</p>
                  */}
