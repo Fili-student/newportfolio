@@ -1,15 +1,19 @@
+
+
+@media screen and (min-width:0px) and (max-width:381px){
+
 *{
     scroll-snap-type: y mandatory;
 }
 
 footer{
     height: 30vh;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
 }
 
 .footer-grid-container{
     background-color: #222238;
-    height: 100vh;
+    height:30vh;
     display: grid;
     grid-template-columns:repeat(12,1fr) ;
     grid-template-rows: repeat(6,1fr);
@@ -17,8 +21,8 @@ footer{
 
 
 .backtop{
-grid-row: 6;
-grid-column: 12;
+grid-row: 5;
+grid-column:7;
 color: #ed3b32;
 font-size: 50px;
 margin-top: 50px;
@@ -31,19 +35,166 @@ text-align: center;
      color: #222238;
     background-color: white;
     grid-row: 6;
-    grid-column: 6/10;
+    grid-column: 1/13;
     height: 100px;
     margin-top: 50px;
     font-size: 23.04px;
+    padding-left: 20px;
+    padding-right: 20px;
+        
 }
 
 .credits > p > a{
     text-decoration: none; 
+    padding-left: 10px; 
+
 }
 
+.credits > p > a:visited{
+    color: #222238;
+}
 
 .credits > p > a:hover{
     color: #ed3b32;
 font-size: 25px;
+}
+
+}
+
+
+@media screen and (min-width: 382px) and (max-width:1193px){
+
+    *{
+        scroll-snap-type: y mandatory;
+    }
+    
+    footer{
+        height: 30vh;
+        scroll-snap-align: end;
+    }
+    
+    .footer-grid-container{
+        background-color: #222238;
+        height: 30vh;
+        display: grid;
+        grid-template-columns:repeat(12,1fr) ;
+        grid-template-rows: repeat(6,1fr);
+    }
+    
+    
+    .backtop{
+    grid-row: 5;
+    grid-column:11;
+    color: #ed3b32;
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+    }
+    
+    .credits{
+        display: flex;
+        flex-direction: row;
+         color: #222238;
+        background-color: white;
+        grid-row: 6;
+        grid-column: 1/13;
+        height: 100px;
+        margin-top: 50px;
+        font-size: 23.04px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+    align-items: center;
+    }
+    
+    .credits > p > a{
+        text-decoration: none; 
+    padding-left: 10px; 
+
+    }
+    
+    .credits > p > a:visited{
+        color: #222238;
+    }
+    
+    .credits > p > a:hover{
+        color: #ed3b32;
+    font-size: 25px;
+    
+    }
+    
+    
+
+
+
+}
+
+
+
+/* --------------------------- */
+
+/* widest screen: */
+
+
+@media screen and (min-width:1194px){
+
+
+*{
+    scroll-snap-type: y mandatory;
+}
+
+footer{
+    height: 30vh;
+    scroll-snap-align: end;
+}
+
+.footer-grid-container{
+    background-color: #222238;
+    height: 30vh;
+    display: grid;
+    grid-template-columns:repeat(12,1fr) ;
+    grid-template-rows: repeat(6,1fr);
+}
+
+
+.backtop{
+grid-row: 5;
+grid-column:12;
+color: #ed3b32;
+font-size: 50px;
+margin-top: 50px;
+text-align: center;
+}
+
+.credits{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     color: #222238;
+    background-color: white;
+    grid-row: 6;
+    grid-column: 1/13;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 23.04px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.credits > p > a{
+    text-decoration: none;
+    padding-left: 10px; 
+}
+
+
+.credits > p > a:visited{
+    color: #222238;
+}
+.credits > p > a:hover{
+    color: #ed3b32;
+font-size: 25px;
+
+}
 
 }

@@ -8,7 +8,7 @@ import Footer from './components/Footer.jsx'
 import "./style/footer.css";
 import Skill from "./components/Skill.jsx"
 import Contact from './components/Contact.jsx'
-
+import { Helmet } from "react-helmet"
 import { useEffect } from 'react';
 
 function App() {
@@ -19,6 +19,10 @@ function App() {
 
   return (
     <>
+    <Helmet>
+        <title>Portfolio</title>
+        <link rel="icon" href="/eye.png"/>
+      </Helmet>
     <Hero />
     <Mainsection />
     <Skill />

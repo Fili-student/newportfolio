@@ -48,8 +48,9 @@ grid-template-columns:repeat(12,1fr) ;
   .contact-formular{
     background-color: #ed3b32;
     grid-column: 6/11;
-    grid-row: 2/8;
+    grid-row: 2/9;
     border-top-left-radius: 290px;
+    margin-bottom: 30px;
   }
 
   .h3contact{
@@ -127,7 +128,7 @@ cursor: pointer;
 
 
 
- @media screen and (min-width: 681px) and (max-width:1490px){ 
+ @media screen and (min-width: 930px) and (max-width:1490px){ 
   *{
     scroll-snap-type: y mandatory; 
   }
@@ -158,6 +159,7 @@ grid-template-columns:repeat(12,1fr) ;
     grid-row: 2/10;
     grid-column: 3;
     background-color: #ed3b32;
+
   }
   .linie-2{
     height: 20px;
@@ -177,8 +179,9 @@ grid-template-columns:repeat(12,1fr) ;
   .contact-formular{
     background-color: #ed3b32;
     grid-column: 6/11;
-    grid-row: 2/8;
+    grid-row: 2/9;
     border-top-left-radius: 290px;
+    margin-bottom: 30px;
   }
 
   .h3contact{
@@ -244,6 +247,7 @@ color: white;
 font-family: 'Abhaya Libre', serif;
 font-size:19.2px ;
 margin-top: 10px;
+margin-bottom: 10px;
 }
 .button-contact:hover{
 background-color: #222238c1;
@@ -258,7 +262,7 @@ cursor: pointer;
 /* Phone: */
 
 
- @media screen and (min-width:0px) and (max-width:680px){
+ @media screen and (min-width:0px) and (max-width:929px){
  
   *{
     scroll-snap-type: y mandatory; 

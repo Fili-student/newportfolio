@@ -4,12 +4,8 @@
 .sec-skill{
     height: 100vh;
     background-color: #222238;
-
     scroll-snap-align: center;
 }
-
-
-
 
 .skill-container{
     height: 100vh;
@@ -26,8 +22,6 @@ h3{
     color: white;
     font-size: 33.18px;
   font-family: 'Chango', display;
-
-
 }
 
 .linie-skill{
@@ -52,48 +46,34 @@ margin-top: 80px;
     margin-left: 50px;
 }
 
+.sec-skill .html-bar, .css-bar, .js-bar, .react-bar  {
+    opacity: 0;
+    transform: translate(0); 
+    width: 0%; 
+  }
+  
+.sec-skill .html-bar.animate-html {
+    animation: grow-html 2s forwards ease-in;
+  }
+ 
+.sec-skill .css-bar.animate-css {
+    animation: grow-css 2s forwards ease-in;
+  }
 
-.html-con {
-background-color:#ed3b32;
-grid-row: 2;
-grid-column: 9/11;
-height: 55px;
-}
-
-.html-bar{
-    background-color: white;
-    animation: grow 0.3s forwards ease-in;
-    transform: translate(0);
-    height: 50px;
-}
-.css-bar{
-    background-color: white;
-    animation: grow-css 0.3s forwards ease-in;
-    transform: translate(0);
-    height: 50px;
-}
-.js-bar{
-    background-color: white;
-    animation: grow-js 0.3s forwards ease-in;
-    transform: translate(0);
-    height: 50px;
-}
- .react-bar{
-    background-color: white;
-    animation: grow-react 0.3s forwards ease-in;
-    transform: translate(0);
-    height: 50px;
-} 
+ 
+.sec-skill .js-bar.animate-js {
+    animation: grow-js 2s forwards ease-in;
+  }
+  
+ 
+.sec-skill .react-bar.animate-react {
+    animation: grow-react 2s forwards ease-in;
+  }
 
 
 
 
-
-
-
-
-
-@keyframes grow {
+@keyframes grow-html {
     0% {
       width: 0%;
      
@@ -102,7 +82,7 @@ height: 55px;
         width: 60%;
     }
     100%{
-        width: 95%;
+        width: 90%;
        
     }
 }
@@ -116,7 +96,7 @@ height: 55px;
         width: 60%;
     }
     100%{
-        width: 95%;
+        width: 92%;
        
     }
 }
@@ -148,7 +128,12 @@ height: 55px;
     }
 } 
 
-
+.html-con {
+    background-color:#ed3b32;
+    grid-row: 2;
+    grid-column: 9/11;
+    height: 55px;
+    }
 
 .css-con{
     background-color:#ed3b32 ;
@@ -169,7 +154,6 @@ height: 55px;
     grid-row: 5;
     grid-column: 6/8;
 height: 55px;
-
 }
 
 
@@ -194,20 +178,6 @@ grid-column:6 ;
     grid-row: 5;
     grid-column:5 ;    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -274,12 +244,7 @@ grid-column:6 ;
     }
     
     
-    .html-con {
-    background-color:#ed3b32;
-    grid-row: 2;
-    grid-column: 9/11;
-    height: 55px;
-    }
+    
     
     .html-bar{
         background-color: white;
@@ -369,7 +334,12 @@ grid-column:6 ;
         }
     } 
     
-    
+    .html-con {
+        background-color:#ed3b32;
+        grid-row: 2;
+        grid-column: 9/11;
+        height: 55px;
+        }
     
     .css-con{
         background-color:#ed3b32 ;
@@ -491,7 +461,7 @@ grid-column:6 ;
     
     .html-bar{
         background-color: white;
-        animation: grow 0.3s forwards ease-in;
+        animation: grow-html 0.3s forwards ease-in;
         transform: translate(0);
         height: 50px;
     }
@@ -522,7 +492,7 @@ grid-column:6 ;
     
     
     
-    @keyframes grow {
+    @keyframes grow-html {
         0% {
           width: 0%;
          
@@ -663,7 +633,7 @@ grid-column:6 ;
     }
     
     .skill-h3{
-        grid-column: 11;
+        grid-column:7/8;
         grid-row: 1;
     }
     h3{
@@ -677,30 +647,32 @@ grid-column:6 ;
     .linie-skill{
       background-color: #ed3b32;
       width: 20px;
-      margin-left: 50px;
-      grid-row: 1/7;
+      margin-left: 10px;
+      grid-row: 1;
       grid-column: 1/2;
     }
     .linie-oben-skill{
     height: 20px;
     background-color:#68a6d8;
-    grid-column: 9/13;
+    grid-column: 1/11;
     grid-row: 1;
     margin-top: 80px;
     }
     .linie-oben-skill-rechts{
-        width: 20px;
+        height: 20px;
         background-color: #ed3b32;
-        grid-column: 12;
-        grid-row: 1/5;
-        margin-left: 50px;
+        grid-column: 6/9;
+        grid-row: 6;
+        /* margin-left: 50px; */
+        display: none;
     }
     
     
     .html-con {
     background-color:#ed3b32;
     grid-row: 2;
-    grid-column: 9/12;
+    grid-column: 7/11;
+
     height: 55px;
     }
     
@@ -797,21 +769,22 @@ grid-column:6 ;
     .css-con{
         background-color:#ed3b32 ;
         grid-row: 3;
-        grid-column: 8/12;
-    height: 55px;
+        grid-column: 7/11;
+
+        height: 55px;
     
     }
     .js-con{
         background-color:#ed3b32 ;
         grid-row: 4;
-        grid-column: 7/12;
+        grid-column: 7/11;
     height: 55px;
     
     }
     .react-con{
         background-color:#ed3b32 ;
         grid-row: 5;
-        grid-column: 6/12;
+        grid-column: 7/11;
     height: 55px;
     
     }
@@ -824,27 +797,27 @@ grid-column:6 ;
     }
     .brand1{
     grid-row: 2;
-    grid-column:8 ;
-    padding-right: 10px;
+    grid-column:6 ;
+    /* padding-right: 10px; */
     }
     .brand2{
         grid-row: 3;
-    grid-column:7 ;
-    padding-right: 10px;
+    grid-column:6;
+    /* padding-right: 10px; */
 
     }
     .brand3{
         grid-row: 4;
     grid-column:6 ;
-    padding-right:10px;
+    /* padding-right:10px; */
 
     }
 
     .brand4{
         grid-row: 5;
-        grid-column:5 ;    
-        padding-right: 10px;
-        padding-left: 5px;
+        grid-column:6 ;    
+        /* padding-right: 25px; */
+        margin-right: 15px;
     
     }
     

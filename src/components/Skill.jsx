@@ -1,5 +1,27 @@
+import { animate, motion } from "framer-motion";
+import useSectionInView from "./view.jsx";
+    // const dropIn = {
+    //     initial:{
+    //         opacity:0,
+    //         y: 100,
+    //     },
+    //     animate:{
+    //         opacity: 1,
+    //         y: 0,        
+    //     }
+    // };
+
 
 function Skill(){
+
+    
+  const [htmlRef, htmlInView] = useSectionInView({ threshold: 0.5 });
+  const [cssRef, cssInView] = useSectionInView({ threshold: 0.5 });
+  const [jsRef, jsInView] = useSectionInView({ threshold: 0.5 });
+  const [reactRef, reactInView] = useSectionInView({ threshold: 0.5 });
+
+
+
 
     return(<>
     <section className="sec-skill">
@@ -12,27 +34,50 @@ function Skill(){
             <div className="linie-oben-skill-rechts"></div>
 
 
+
             <i class="fa-brands fa-html5 skill-brand brand1"></i>
-        <div className="html-con">
-            <div className="html-bar"></div>
-            </div>
+        
+            <div className="html-con">
+          <motion.div
+            className={`html-bar ${htmlInView ? 'animate-html' : ''}`}
+            ref={htmlRef}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: htmlInView ? 1 : 0 }}
+            transition={{ duration: 1.4 }}
+          />
+        </div>
 
             <i class="fa-brands fa-css3-alt skill-brand brand2"></i>
         <div className="css-con">
-            <div className="css-bar"></div>
+            {/* <div className="css-bar"></div> */}
+            <motion.div className={`css-bar ${cssInView ? 'animate-css' : ''}`}
+             ref={cssRef} 
+             initial={{opacity:0}}             
+            animate={{ opacity: cssInView ? 1 : 0 }}
+             transition={{duration:1.8}}/>
         </div>
 
         
         <i class="fa-brands fa-js skill-brand brand3"></i>
         <div className="js-con">
-                        <div className="js-bar"></div>
+                        {/* <div className="js-bar"></div> */}
+                        <motion.div className={`js-bar ${jsInView ? 'animate-js' : ''}`}
+             ref={jsRef} 
+             initial={{opacity:0}}             
+            animate={{ opacity: jsInView ? 1 : 0 }}
+             transition={{duration:2.1}}/>
 
         </div>
 
 
         <i class="fa-brands skill-brand fa-react brand4"></i>
         <div className="react-con">
-        <div className="react-bar" ></div>
+        {/* <div className="react-bar" ></div> */}
+        <motion.div className={`react-bar ${reactInView ? 'animate-react' : ''}`}
+             ref={reactRef} 
+             initial={{opacity:0}}             
+            animate={{ opacity: reactInView ? 1 : 0 }}
+             transition={{duration:2.4}}/>
 
             </div>
         </div>
@@ -40,5 +85,6 @@ function Skill(){
     </section>
 
     </>);
+
 }
 export default Skill
