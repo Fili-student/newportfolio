@@ -1,26 +1,14 @@
 import { animate, motion } from "framer-motion";
 import useSectionInView from "./view.jsx";
-    // const dropIn = {
-    //     initial:{
-    //         opacity:0,
-    //         y: 100,
-    //     },
-    //     animate:{
-    //         opacity: 1,
-    //         y: 0,        
-    //     }
-    // };
 
 
 function Skill(){
 
     
-  const [htmlRef, htmlInView] = useSectionInView({ threshold: 0.5 });
-  const [cssRef, cssInView] = useSectionInView({ threshold: 0.5 });
-  const [jsRef, jsInView] = useSectionInView({ threshold: 0.5 });
-  const [reactRef, reactInView] = useSectionInView({ threshold: 0.5 });
-
-
+  const [htmlRef, htmlInView] = useSectionInView({ threshold: 0.5 , rootMargin: '0px'});
+  const [cssRef, cssInView] = useSectionInView({ threshold: 0.5, rootMargin: '0px' });
+  const [jsRef, jsInView] = useSectionInView({ threshold: 0.5, rootMargin: '0px'});
+  const [reactRef, reactInView] = useSectionInView({ threshold: 0.5 ,rootMargin: '0px' });
 
 
     return(<>
@@ -33,8 +21,6 @@ function Skill(){
             <div className="linie-oben-skill"></div>
             <div className="linie-oben-skill-rechts"></div>
 
-
-
             <i class="fa-brands fa-html5 skill-brand brand1"></i>
         
             <div className="html-con">
@@ -43,7 +29,7 @@ function Skill(){
             ref={htmlRef}
             initial={{ opacity: 0 }}
             animate={{ opacity: htmlInView ? 1 : 0 }}
-            transition={{ duration: 1.4 }}
+            transition={{ duration: 2 }}
           />
         </div>
 
@@ -54,7 +40,8 @@ function Skill(){
              ref={cssRef} 
              initial={{opacity:0}}             
             animate={{ opacity: cssInView ? 1 : 0 }}
-             transition={{duration:1.8}}/>
+            transition={{duration:2}}
+             />
         </div>
 
         
@@ -65,7 +52,8 @@ function Skill(){
              ref={jsRef} 
              initial={{opacity:0}}             
             animate={{ opacity: jsInView ? 1 : 0 }}
-             transition={{duration:2.1}}/>
+            transition={{duration:2}}
+             />
 
         </div>
 
@@ -77,7 +65,8 @@ function Skill(){
              ref={reactRef} 
              initial={{opacity:0}}             
             animate={{ opacity: reactInView ? 1 : 0 }}
-             transition={{duration:2.4}}/>
+            transition={{duration:2}}
+             />
 
             </div>
         </div>
